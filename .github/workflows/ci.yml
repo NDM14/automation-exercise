@@ -54,6 +54,8 @@ jobs:
           name: coverage-data
           path: .coverage
           retention-days: 1
+          include-hidden-files: true
+          if-no-files-found: error
 
   coverage_report:
     name: coverage_report
